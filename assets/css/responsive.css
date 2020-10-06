@@ -1,0 +1,190 @@
+@media(max-width:768px){
+    .nav_link{
+        display: none;
+    }
+    .menu_bar{
+        display: block;
+        width: 30px;
+        height: 40px;
+        float: right;
+        margin: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .menu_bar span{
+        width: 100%;
+        height: 2px;
+        background: #da1762;
+        margin-top: 5px;
+        transition: 0.5s;
+    }
+    .menubar_active1{
+        transform: rotate(45deg);
+        transition: 0.5s;
+        position: relative;
+        top: 7px;
+    }
+    .menubar_active2{
+        transform: rotate(-45deg);
+        transition: 0.5s;
+        position: relative;
+        top: -7px;
+    }
+    .side_menu{
+        display: block;
+        width: 100%;
+        height: 50vh;
+        position: fixed;
+        background: #fff;
+        z-index: 99;
+        transition: 0.5s;
+        top: -100vh;
+    }
+    .sidemenu_container{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-top: 100px;
+        padding: 0px 5px;
+        padding-bottom: 5px;
+        background: #fff;
+    }
+    .sidemenu_column{
+        flex: 0 0 49%;
+        height: 100px;
+        margin-top: 5px;
+        border-radius: 7px;
+        -webkit-box-shadow: inset 0px 0px 15px 0px rgba(0,0,0,0.21);
+        -moz-box-shadow: inset 0px 0px 15px 0px rgba(0,0,0,0.21);
+        box-shadow: inset 0px 0px 15px 0px rgba(0,0,0,0.21);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .sidemenu_column p{
+        font-family: 'Lobster', cursive;
+        font-size: 18px;
+        font-weight: normal;
+    }
+    .sidemenu_column p a{
+        text-decoration: none;
+        color: black;
+        padding: 25px 35px;
+    }
+    .side_col1{
+        background: #d8f9e4;
+    }
+    .side_col2{
+        background: #fdfddf;
+    }
+    .side_col3{
+        background: #e8e8f2;
+    }
+    .side_col4{
+        background: #f58aad;
+    }
+    .side_col5{
+        background: #faf4a6;
+    }
+    .side_col6{
+        background: #fabfdf;
+    }
+
+    /* banner */
+    .banner{
+        height: 80vh;
+    }
+    .banner_column1{
+        display: none;
+    }
+    .banner_column2{
+        width: 100%;
+        padding: 20px;
+    }
+    .banner_column2 h1{
+        font-family: 'Noto Sans JP', sans-serif;
+        font-weight: 900;
+        font-size: 35px;
+        line-height: 1.5;
+    }
+
+    /* category */
+    .cat_column{
+        flex: 100%;
+    }
+    .cat_container{
+        width: 90%;
+    }
+    .cat_hide{
+        display: none;
+    }
+    .cat_show{
+        display: block;
+    }
+
+    /* about */
+    .abt_video_section{
+        height: 250px;
+        margin-top: 50px;
+    }
+    .about_section p{
+        text-align: left;
+    }
+    .about_section span{
+        justify-content: flex-start;
+    }
+
+    /* hairstyle */
+    .hair_column1{
+        width: 100%;
+    }
+    .hair_column1_thumbnail{
+        width: 90%;
+    }
+    .hair_column2{
+        width: 100%;
+        height: 100%;
+        padding-right: 0px;
+        padding: 20px;
+    }
+
+    /* makeup */
+    .flex_container{
+        flex-direction: column;
+    }
+    .makeup_column1{
+        width: 100%;
+    }
+    .makeup_column1_thumbnail{
+        width: 90%;
+        order: 1;
+    }
+    .makeup_column2{
+        width: 100%;
+        height: 100%;
+        padding-left: 0px;
+        padding: 20px;
+        order: 2;
+    }
+
+    /* skincare */
+    .skincare_column1{
+        width: 100%;
+    }
+    .skincare_column1_thumbnail{
+        width: 90%;
+    }
+    .skincare_column2{
+        width: 100%;
+        height: 100%;
+        padding-right: 0px;
+        padding: 20px;
+    }
+
+    /* feature */
+    .feature_column{
+        width: 100%;
+    }
+}

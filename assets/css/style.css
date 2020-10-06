@@ -1,0 +1,593 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP:100,300,400,500,700,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Monoton&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lobster|Monoton&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    width: 80%;
+    height: 100px;
+    left: 10%;
+    float: left;
+    position: fixed;
+    z-index: 100;
+    background: rgba(255, 255, 255, 0.753);
+}
+.logo{
+    height: 100%;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav_link{
+    height: 100%;
+    float: right;
+    display: flex;
+    align-items: center;
+    padding-right: 20px;
+}
+.nav_link ul li{
+    list-style: none;
+    float: left;
+}
+.nav_link ul li a{
+    text-decoration: none;
+    padding: 10px 15px;
+    color: black;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 300;
+}
+.active{
+    border-bottom: 1px dotted black;
+}
+.menu_bar{
+    display: none;
+}
+.side_menu{
+    display: none;
+}
+
+
+/* banner */
+.banner{
+    width: 100%;
+    height: 100vh;
+    float: left;
+    background-image: linear-gradient(to right, rgb(250, 223, 249),rgb(227, 252, 253));
+    overflow: hidden;
+}
+.banner_column1{
+    width: 50%;
+    height: 100%;
+    float: left;
+    background-image: url(../images/barber-bathrobe-bathroom-4614-removebg-preview.png);
+    background-position: left;
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.banner_column2{
+    width: 50%;
+    float: left;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 50px;
+}
+.banner_column2 h1{
+    font-family: 'Lobster', cursive;
+    font-weight: normal;
+    font-size: 55px;
+    line-height: 1.5;
+}
+.social_icons{
+    margin-top: 20px;
+    display: flex;
+}
+.social_icons span{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: rgb(49, 49, 49);
+    display: block;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.social_icons span i{
+    color: white;
+}
+
+
+/* category section */
+.category_section{
+    width: 100%;
+    padding: 100px 0px;
+    float: left;
+    background-image: url(../images/makeupset.jpg);
+    /* background-attachment: fixed; */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.cat_container{
+    width: 80%;
+    margin: 0 auto;
+}
+.category{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    float: left;
+}
+.cat_column{
+    flex: 1 0 33%;
+    height: 700px;
+    background: #eee;
+    overflow: hidden;
+}
+.cat_hide{
+    display: block;
+}
+
+.cat_show{
+    display: none;
+}
+.cat_column:hover .cat_thumbnail img{
+    transform: scale(1.1);
+    transition: 1s;
+}
+.cat_thumbnail{
+    width: 100%;
+    height: 65%;
+    float: left;
+    overflow: hidden;
+}
+.cat_thumbnail img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 1s;
+}
+.cat_content{
+    width: 100%;
+    float: left;
+    height: 35%;
+    background: rgb(240, 240, 172);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+.cat_content h1{
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 1.5;
+}
+.cat_content p{
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    margin-top: 20px;
+    line-height: 1.5;
+    text-align: center;
+}
+.cat_content a{
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 20px;
+    line-height: 1.5;
+    text-align: center;
+    padding: 5px 15px;
+    width: 100px;
+    background: #e63b7c;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+/* about section */
+.about_section{
+    width: 100%;
+    padding: 100px 0px;
+    float: left;
+}
+.about_section h1{
+    font-family: 'Lobster', cursive;
+    font-size: 50px;
+    text-align: center;
+    line-height: 1.5;
+}
+.abt_video_section{
+    width: 100%;
+    height: 500px;
+    float: left;
+    margin-top: 100px;
+    background: #eee;
+    border: 3px;
+    overflow: hidden;
+}
+.about_section p{
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 15px;
+    text-align: center;
+    line-height: 2;
+    font-weight: 300;
+    margin-top: 50px;
+    float: left;
+}
+.about_section span{
+    width: 100%;
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about_section a{
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1.5;
+    text-align: center;
+    padding: 5px 15px;
+    width: 120px;
+    background: #e63b7c;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    margin-top: 50px;
+}
+
+/* hairstyel section */
+.hairstyle_section{
+    width: 100%;
+    float: left;
+    padding: 100px 0px;
+    background-image: linear-gradient(to right, rgb(227, 252, 253), rgb(250, 223, 249));
+    overflow: hidden;
+}
+.hairstyle_section h1{
+    font-family: 'Lobster', cursive;
+    font-size: 50px;
+    text-align: center;
+    line-height: 1.5;
+    font-weight: normal;
+}
+.hair_column1{
+    width: 50%;
+    float: left;
+    margin-top: 50px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hair_column1_thumbnail{
+    width: 60%;
+    height: 500px;
+    background: #eee;
+    -webkit-box-shadow: 88px 79px 21px 0px rgba(150,149,138,0.31);
+    -moz-box-shadow: 88px 79px 21px 0px rgba(150,149,138,0.31);
+    box-shadow: 88px 79px 21px 0px rgba(150,149,138,0.31); 
+}
+.hair_column1_thumbnail img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.hair_column2{
+    width: 50%;
+    height: 500px;
+    float: left;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 50px;
+    padding-right: 100px;
+}
+.hair_column2 p{
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 21px;
+    line-height: normal;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.712);
+}
+.hair_column2 a{
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 12px;
+    line-height: 1.5;
+    text-align: center;
+    padding: 11px 15px;
+    width: 120px;
+    border: 2px solid #e63b7c;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+    margin-top: 50px;
+}
+
+/* makeup section */
+.makeup_section{
+    width: 100%;
+    float: left;
+    padding: 100px 0px;
+    background-image: linear-gradient(to right, rgba(225, 145, 147, 0.35), rgba(216, 148, 101, 0.45));
+    overflow: hidden;
+}
+.makeup_section h1{
+    font-family: 'Lobster', cursive;
+    font-size: 50px;
+    text-align: center;
+    line-height: 1.5;
+}
+.flex_container{  
+    display: flex;
+}
+.makeup_column1{
+    width: 50%;
+    float: left;
+    margin-top: 50px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.makeup_column1_thumbnail{
+    width: 60%;
+    height: 500px;
+    background: #eee;
+    -webkit-box-shadow: -88px 79px 21px 0px rgba(150,149,138,0.31);
+    -moz-box-shadow: -88px 79px 21px 0px rgba(150,149,138,0.31);
+    box-shadow: -88px 79px 21px 0px rgba(150,149,138,0.31);
+}
+.makeup_column1_thumbnail img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.makeup_column2{
+    width: 50%;
+    height: 500px;
+    float: left;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 50px;
+    padding-left: 100px;
+}
+.makeup_column2 p{
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 21px;
+    line-height: normal;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.712);
+}
+.makeup_column2 a{
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 12px;
+    line-height: 1.5;
+    text-align: center;
+    padding: 11px 15px;
+    width: 120px;
+    border: 2px solid #e63b7c;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+    margin-top: 50px;
+}
+.make_hide{
+    display: block;
+}
+.make_show{
+    display: block;
+}
+
+/* skincare section */
+.skincare_section{
+    width: 100%;
+    float: left;
+    padding: 100px 0px;
+     background-image: linear-gradient(to right, rgba(249, 128, 160, 0.18), rgba(212, 195, 74, 0.45));
+     overflow: hidden;
+}
+.skincare_section h1{
+    font-family: 'Lobster', cursive;
+    font-size: 50px;
+    text-align: center;
+    line-height: 1.5;
+}
+.skincare_column1{
+    width: 50%;
+    float: left;
+    margin-top: 50px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.skincare_column1_thumbnail{
+    width: 60%;
+    height: 500px;
+    background: #eee;
+    -webkit-box-shadow: 88px 79px 21px 0px rgba(150,149,138,0.31);
+    -moz-box-shadow: 88px 79px 21px 0px rgba(150,149,138,0.31);
+    box-shadow: 88px 79px 21px 0px rgba(150,149,138,0.31); 
+}
+.skincare_column1_thumbnail img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.skincare_column2{
+    width: 50%;
+    height: 500px;
+    float: left;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 50px;
+    padding-right: 100px;
+}
+.skincare_column2 p{
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 21px;
+    line-height: normal;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.712);
+}
+.skincare_column2 a{
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 12px;
+    line-height: 1.5;
+    text-align: center;
+    padding: 11px 15px;
+    width: 120px;
+    border: 2px solid #e63b7c;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+    margin-top: 50px;
+}
+
+/* feature section */
+.feature_section{
+    width: 100%;
+    padding: 100px 0px;
+    float: left;
+}
+.feature_section h1{
+    font-family: 'Lobster', cursive;
+    font-size: 50px;
+    text-align: center;
+    line-height: 1.5;
+}
+.feature{
+    width: 100%;
+    float: left;
+    margin-top: 25px;
+}
+.feature_column{
+    width: calc(100% / 4);
+    float: left;
+    height: 100px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* footer  */
+footer{
+    width: 100%;
+    float: left;
+    padding: 100px 0px;
+    background: rgb(245, 222, 179);
+}
+.subscrib_section{
+    width: 100%;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.subscrib_section h1{
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 25px;
+    text-align: center;
+    line-height: 1.5;
+}
+.subscrib_section input{
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 15px;
+    border: 2px solid rgb(0, 0, 0);
+    outline: none;
+    width: 350px;
+    font-weight: 700;
+    background: transparent;
+    padding: 10px;
+ 
+    margin-top: 20px;
+}
+.btn-container{
+    width: 350px;
+    height : 60px;
+    background: url(../images/lipstic.png);
+    background-size: cover;
+    background-position: center;
+    margin-top: 20px;
+}
+.subscrib_section button{
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 15px;
+    border: none;
+    outline: none;
+    width: 100%;
+    background: none;
+    height: 100%;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+}
+.foot{
+    width: 100%;
+    float: left;
+    margin-top: 50px;
+}
+.foot_column1{
+    width: 50%;
+    float: left;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.foot_column1 p{
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 12px;
+}
+.foot_social_icons{
+    margin-top: 20px;
+    display: flex;
+}
+.foot_social_icons span{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: black;
+    display: block;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.foot_column2{
+    width: 50%;
+    float: left;
+}
+.foot_column2 p{
+    float: right;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 12px;
+}
+.love img{
+    position: relative;
+    top:-1px;
+    animation: bounce2 0.5s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+@keyframes bounce2 {
+    from {transform: scale(0.8); }
+    to   { transform: scale(1.2); }
+  }
